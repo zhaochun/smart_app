@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAABB">
+
+    <TextView
+        android:text="系统提示"
+        android:textSize="20dp"
+        android:background="#ADF"
+        android:paddingLeft="20dp"
+        android:textColor="#999"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/textView_alert" />
+    <TextView
+
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+      />
+    <TextView
+        android:text="是否进入？"
+        android:textSize="15dp"
+        android:background="#ADF"
+        android:paddingLeft="20dp"
+        android:textColor="#999"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView_message" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#93FF">
+        <TextView
+            android:text="退出"
+            android:textSize="20dp"
+            android:textColor="#999"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/textView_exit" />
+
+        <TextView
+
+            android:background="#FFF"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:text="确定"
+            android:textSize="20dp"
+            android:textColor="#999"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/textView_confirm"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+
+</LinearLayout>

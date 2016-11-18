@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F7C33E"
+        >
+
+
+        <TextView
+            android:text=" "
+            android:layout_width="50dp"
+            android:background="#F7C33E"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_magin"
+            android:visibility="gone"
+
+             />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            app:srcCompat="@drawable/icon_my_collect"
+            android:id="@+id/imageView2"
+            android:layout_below="@+id/textView_magin"
+            android:layout_toRightOf="@+id/textView_magin"
+            android:layout_toEndOf="@+id/textView_magin" />
+
+        <TextView
+            android:text="意见与反馈"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:id="@+id/textView_alert"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#FFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPersonName"
+            android:hint="说点什么吧···"
+            android:textSize="20dp"
+            android:textColorHint="#D4D4D4"
+            android:textColor="#000"
+            android:ems="10"
+            android:id="@+id/editText_first"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFF"
+            android:layout_marginBottom="2dp"
+            android:inputType="textPersonName"
+            android:hint="手机号（选填）"
+            android:textColorHint="#D4D4D4"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:id="@+id/editText_cellphone"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFF"
+            android:layout_marginBottom="2dp"
+            android:inputType="textPersonName"
+            android:hint="邮箱（选填）"
+            android:textSize="20dp"
+            android:textColorHint="#D4D4D4"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:id="@+id/editText_mail"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFF"
+            android:layout_marginBottom="2dp"
+            android:inputType="textPersonName"
+            android:hint="QQ（选填）"
+            android:textSize="20dp"
+            android:textColorHint="#D4D4D4"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:id="@+id/editText_QQ"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:text="提交"
+            android:background="#F7C33E"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView_confirm" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

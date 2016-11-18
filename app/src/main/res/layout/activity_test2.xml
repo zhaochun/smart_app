@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F7C33E">
+
+
+        <TextView
+            android:text="重置密码"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:id="@+id/textView_alert"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            app:srcCompat="@drawable/back_white"
+            android:id="@+id/imageView2"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:text="旧密码"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="字母和数字搭配不少于8位"
+            android:textColorHint="#D4D4D4"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:background="#fff"
+            android:textCursorDrawable="@null"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:id="@+id/textView4"
+        android:background="#FFF"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF">
+
+        <TextView
+            android:text="重复密码"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/textView3"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            />
+        <!--android:textColor="#000"-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="重复输入一次新密码"
+            android:textCursorDrawable="@null"
+            android:textColorHint="#D4D4D4"
+            android:textColor="#000"
+            android:background="#FFF"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/textView5"
+        android:background="#D0D1D2"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:text="完成"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_shape"
+        android:id="@+id/button"
+        />
+</LinearLayout>
